@@ -1,6 +1,7 @@
 "use strict"
 const btnEl = document.querySelector(".btn");
 const btnXEl = document.querySelector(".btn-x");
+const rgbTextEl = document.querySelector(".rgb-text");
 
 // Random Color
 btnEl.addEventListener("click", function () {
@@ -8,6 +9,7 @@ btnEl.addEventListener("click", function () {
   const b = Math.trunc(Math.random() * 255) + 1;
   const c = Math.trunc(Math.random() * 255) + 1;
   document.body.style.backgroundColor = `rgb(${a}, ${b}, ${c})`;
+  rgbTextEl.textContent = `rgb(${a}, ${b}, ${c})`;
 });
 
 // Resetting the app

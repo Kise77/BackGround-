@@ -15,4 +15,5 @@ btnEl.addEventListener("click", function () {
 // Resetting the app
 btnXEl.addEventListener("click", function () {
   document.body.style.backgroundColor = "rgb(255,255,255)";
+  rgbTextEl.textContent = "";
 })
